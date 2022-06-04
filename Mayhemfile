@@ -1,0 +1,9 @@
+project: kivm
+target: kivm
+image: ghcr.io/rnshah9/playground:kivm
+
+cmds:
+  - cmd: /repo/build/java /test.class
+    filepath: /test.class
+    env:
+      DISABLE_SMOKETEST: '1'
